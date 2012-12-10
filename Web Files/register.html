@@ -1,0 +1,127 @@
+<html>
+	<head>
+	<title>Register - Online Bookshop +</title>
+	
+	<link rel = "stylesheet" type = "text/css" href = "obsstyle.css">
+	<script type = "text/javascript" src = "functions.js"></script>
+
+	</head>
+	
+	<body onload = "checkCookie()">
+	
+	<p id = "admin">COMP344 Assignment 2 2012<br />Horhou Lam<br />42491428</p>
+
+	<h1>Online Bookshop +</h1>
+	<h2>Register</h2>
+	
+	<div id = 'links'>
+		<ul>
+			<li><a href = 'login.html'>Login</a></li>
+			<li>Add another Credit Card</li>
+			<li><a href = 'browse.php'>Browse</a></li>
+			<li><a href = 'cart.php'>Shopping Cart</a></li>
+		</ul>
+	</div>
+	
+	
+		
+	
+	<div id = "main">
+		<p>Already registered? <a href = "login.html">Login here</a>.</p>
+		
+		<form method = "POST" name = "registration" action ="register.php" onSubmit = "return validate()">
+		<table>
+			<tr>
+				<td colspan = 2><h3>Login Information</h3></td>
+			</tr>	
+			
+			<tr>
+				<td>MQ Email:</td>
+				<td><input type = "text" name = "email"></td>
+				<td><div id = "emailMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Password:</td>
+				<td><input type = "password" name = "password" onchange = "checkPassword(this)"></td>
+				<td><div id = "passwordMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Confirm Password:</td>
+				<td><input type = "password" name = "confPass" onchange = "confirmPassword(this)"></td>
+				<td><div id = "confPassMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>First name:</td>
+				<td><input type = "text" name = "fname"></td>
+				<td><div id = "fnameMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Last name:</td>
+				<td><input type = "text" name = "lname"></td>
+				<td><div id = "lnameMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan = 2><h3>Shipping Address</h3></td>
+			</tr>
+			
+			<tr>
+				<td>Unit/No:</td>
+				<td><input type = "text" name = "unitNo"></td>
+				<td><div id = "unitNoMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Street:</td>
+				<td><input type = "text" name = "street"></td>
+				<td><div id = "streetMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>City:</td>
+				<td><input type = "text" name = "city"></td>
+				<td><div id = "cityMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>State:</td>
+				<td>
+					<select name = "state">
+						<option value = "" style="display:none">---</option>
+						<option value = "ACT">ACT</option>
+						<option value = "NSW">NSW</option>
+						<option value = "NT">NT</option>
+						<option value = "QLD">QLD</option>
+						<option value = "SA">SA</option>
+						<option value = "TAS">TAS</option>
+						<option value = "VIC">VIC</option>
+						<option value = "WA">WA</option>
+					</select>
+				</td>
+				<td><div id = "stateMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Postcode:</td>
+				<td><input type = "text" name = "postcode" maxlength = 4 size = 4></td>
+				<td><div id = "postcodeMsg" style = "color: Red"></div></td>
+			</tr>
+			
+			<tr>
+				<td><input type = "reset" value = "Clear Form" /> </td>
+				<td><input type = "submit" value = "Register" /> </td>
+			</tr>
+			
+			
+		</table>
+		</form>
+	</div>
+	
+	</body>
+	
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Login - Online Bookshop +</title>
+	<link rel = "stylesheet" type = "text/css" href = "obsstyle.css">
+	<script type = 'text/javascript' src = 'functions.js'></script>
+	</head>
+	
+	<body onload = "checkCookie()">
+	
+	<p id = "admin">COMP344 Assignment 2 2012<br />Horhou Lam<br />42491428</p>
+
+	<h1>Online Bookshop +</h1>
+	<h2>Login</h2>
+	
+	<div id = 'links'>
+		<ul>
+			<li><a href = 'login.html'>Login</a></li>
+			<li>Add another Credit Card</li>
+			<li><a href = 'browse.php'>Browse</a></li>
+			<li><a href = 'cart.php'>Shopping Cart</a></li>
+		</ul>
+	</div>
+	
+	<div id = "main">
+		<p>New to Online Bookshop? <a href = "register.html">Register here</a>.</p>
+		
+		<form method = "POST" name = "loginForm" action = "login.php">
+		<table>	
+			<tr>
+				<td>MQ Email:</td>
+				<td><input type = "text" name = "email"></td>
+			</tr>
+			
+			<tr>
+				<td>Password:</td>
+				<td><input type = "password" name = "password"></td>
+			</tr>
+			
+			<tr>
+				<td colspan = 2><input type = "submit" value = "Login" /> </td>
+			</tr>
+		</table>
+		</form>
+	</div>
+	
+	</body>
+	
+</html>

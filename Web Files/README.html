@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Horhou Lam - COMP344 Assignment 2 Part 2</title>
+</head>
+
+<body>
+<h1>Online Bookshop +</h1>
+<h2>Horhou Lam</h2>
+
+<p>Online Bookshop + is a basic e-commerce website with multi-category catalogue browsing; session and shopping cart management; and payment processing.</p>
+
+<p><a href = 'http://spider.science.mq.edu.au/mqauth/42491428/OBS/login.html'>Login here</a>.</p>
+
+<p><b>Login:</b> test.account@mq.edu.au</br><b>Password:</b> q123123</br></p>
+
+<p><b>Note:</b>This e-commerce website was originally designed to only register users with email addresses given by Macquarie University.</p>
+
+<h3>Database Schema</h3>
+<img src = 'http://spider.science.mq.edu.au/mqauth/42491428/Assignment2/database.jpg' height = '500' width = '700'/>
+<p>The Credit Card and Administrator table is unused in this system.</p>
+
+<h3>Catalogue Browsing</h3>
+<p>The original version of Online Bookshop only listed books in the catalogue. It was later extended to support different main categories (books, DVD's and Devices) and
+sub-categories for every main category.</p>
+
+<h3>Payment Processing</h3>
+<p>At this stage of the system, payment processing is done via SecurePay over SSL. Using SecurePay's test server to handle transactions, the system can also handle rejected transactions delivered from the test server, that is not only due to incorrect
+credit card information, but also other factors. Namely, responses 34, 43, and 51 are dealt with in the system and provides a summary page related to them; key products to look out for include
+<a href="http://spider.science.mq.edu.au/mqauth/42491428/OBS/viewItem.php?pid=P0011&cid=CA002">Galaxy Conflict I</a>, 
+<a href="http://spider.science.mq.edu.au/mqauth/42491428/OBS/viewItem.php?pid=P0015&cid=CA003">Orange mySlate</a> and 
+<a href="http://spider.science.mq.edu.au/mqauth/42491428/OBS/viewItem.php?pid=P0005&cid=CA002">The Black Lotus</a>. 
+Response codes 101, 102 and 109 are dealt with by sending the user back to the <a href="http://spider.science.mq.edu.au/mqauth/42491428/OBS/cart.php">cart</a>.</p>
+
+
+</body>
+<html>
